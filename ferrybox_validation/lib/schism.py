@@ -1460,7 +1460,7 @@ class schism_outputs_by_variable():
          files[key]=np.hstack([np.sort(glob.glob('{:s}{:s}_{:s}.nc'.format(ncdir,key,'?'*iorder))) for iorder in range(1,6)])
          #self.ds[key]=xr.open_mfdataset(files[key][:max_stack]) # this crashes
          #self.ds[key]= [xr.open_dataset(file).chunk() for file in files[key][:max_stack]]
-		 self.ds[key]=xr.concat([xr.open_dataset(file).chunk() for file in files[key][:max_stack]],dim='time')
+         self.ds[key]=xr.concat([xr.open_dataset(file).chunk() for file in files[key][:max_stack]],dim='time')
 		#s.nc=xr.concat(all_dsets, dim='time')
 
       exclude=[]#exclude=['time','SCHISM_hgrid', 'SCHISM_hgrid_face_nodes', 'SCHISM_hgrid_edge_nodes', 'SCHISM_hgrid_node_x',     'SCHISM_hgrid_node_y', 'bottom_index_node', 'SCHISM_hgrid_face_x', 'SCHISM_hgrid_face_y',     'ele_bottom_index', 'SCHISM_hgrid_edge_x', 'SCHISM_hgrid_edge_y', 'edge_bottom_index',     'sigma', 'dry_value_flag', 'coordinate_system_flag', 'minimum_depth', 'sigma_h_c', 'sigma_theta_b',      'sigma_theta_f', 'sigma_maxdepth', 'Cs'] # exclude for plot selection
