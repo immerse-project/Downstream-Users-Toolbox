@@ -15,21 +15,23 @@ It consists of two jupyter notebooks (to be found in ./code):
 2. CompTraj_uncoupledVScoupled.ipynb: Compares Lagrangian particle tarjectories calculated from ocean only and coupled ocean-wave model simulations to assess impact of waves on surface particle dispersal
 
 
-## Install software 
-### Install miniconda and jupyter notebook
+## Install software
 1. Install miniconda if needed following https://conda.io/docs/user-guide/install/
 2. Create conda environment with additional packages needed for tutorial (parcels: https://oceanparcels.org/, jupyter: https://jupyter.org/, xhistogram: https://xhistogram.readthedocs.io/en/latest/installation.html)
 ```
 conda activate root
 conda create -n py3_parcels-waves -c conda-forge parcels cartopy ffmpeg jupyter xhistogram
 ```
-3. Get jupyter notebooks by cloning repository
+3. Create working directory
 ``` 
 mkdir toolbox_wave-impact-particletransport
 cd toolbox_wave-impact-particletransport
+```
+4. Get jupyter notebooks
+```
 mkdir code
 cd code
-git clone ???
+### -> download the two jupyter notebooks found in found in ./code ###
 ```
 
 ## Gather example data
@@ -37,20 +39,29 @@ git clone ???
 cd ..
 mkdir data
 cd data
-????
+mkdir domain
+mkdir surface_TKE_UNC 
+mkdir surface_TKE_CO
+cd domain
+### ->  download grid data ###
+cd ../surface_TKE_UNC
+### -> download surface velocity data from uncoupled simulation (surface_TKE_v42RC) ###
+cd ../surface_TKE_CO
+### -> download surface velocity data from coupled simulation (surface_TKE_CO_FORCE_MIX_LC015) ###
+cd .. #back to data folder
 ```
 
 ## Execute the tutorial
-Create folder for figure output
+Create folder for trajectory and figure output
 ```
-cd ..
-mkdir figures
+mkdir LAtrajectories
+mkdir ../figures
 ```
 Activate environment and start jupyter notebook
 ```
-cd code
+cd ../code
 conda activate py3_parcels-waves
 export CC==gcc # necessary when Parcels is installed on MAC
 jupyter notebook
 ```
-Open and execute notebooks
+Open and execute notebooks, first Parcels_CalcTraj.ipynb, then CompTraj_uncoupledVScoupled.ipynb
