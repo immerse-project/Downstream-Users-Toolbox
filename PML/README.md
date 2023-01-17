@@ -1,14 +1,17 @@
 [comment]: #![](https://immerse-ocean.eu/img/headers/immerse-header-logo.png) 
 
-<div style=\max-width:50%; display:inline-block;\ \>
- </div>
- 
-<img src="https://immerse-ocean.eu/img/headers/immerse-header-logo.png"
+<div class="row">
+  <div class="column">
+   <img src="https://immerse-ocean.eu/img/headers/immerse-header-logo.png"
      alt="Immerse logo"
-     style="float: left;text-align: center; width: 350px; margin-right: 10px;" />
-<img src="https://www.pml.ac.uk/Content/Images/PMLLogo.svg"
+     style="width:30%" />
+  </div>
+  <div class="column">
+    <img src="https://user-images.githubusercontent.com/5012287/212934740-ded6ea99-f513-4048-b486-d24ec9a85b36.png"
      alt="PML logo"
-     style="float: right;text-align: right; width: 350px; margin-right: 10px;" />
+     style="width:30%" />
+   </div>
+</div>
 
 <center><h1> Evaluation and Analysis of estuarine hydrodynamics with the unstructured grid model FVCOM
 
