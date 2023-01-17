@@ -1,4 +1,16 @@
-# Evaluation and Analysis of estuarine hydrodynamics with the unstructured grid model FVCOM
+[comment]: #![](https://immerse-ocean.eu/img/headers/immerse-header-logo.png) 
+
+<div style=\max-width:50%; display:inline-block;\ \>
+ </div>
+ 
+<img src="https://immerse-ocean.eu/img/headers/immerse-header-logo.png"
+     alt="Immerse logo"
+     style="float: left;text-align: center; width: 350px; margin-right: 10px;" />
+<img src="https://www.pml.ac.uk/Content/Images/PMLLogo.svg"
+     alt="PML logo"
+     style="float: right;text-align: right; width: 350px; margin-right: 10px;" />
+
+<center><h1> Evaluation and Analysis of estuarine hydrodynamics with the unstructured grid model FVCOM
 
 ## Introduction
 The goal of this tutorial is to analyze estuarine dynamics within the Total Exchange Flow (TEF) framework as orginally developed by McCready (2011) and subsequently extended in Wang et al. (2017) and Burchard et al. (2019). The TEF extends the work of Knudsen on estuarine salinity volume exchanges to discretised such exchange in the salinity space. By doing so, one can derive both the advective and diffusive fluxes as well as quantify turbulent mixing through changes in the salinity variance. This framework can be used to validate model performance or to assess changes in model setup. Within the IMMERSE project, the approach has been used to evaluate the effects of using different CMEMS products (AMM15 vs AMM7 NorthWest Shelf operational products) on the dynamics of the Tamar estuary (UK) and their subsequent impact on biogeochemistry using the unstructured grid hydrodynamic model FVCOM (Chen et al 2003, Sims et al., 2022) and the biogeochemical ERSEM model (Butenschön et al., 2016).
