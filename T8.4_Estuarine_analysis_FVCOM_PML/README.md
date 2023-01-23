@@ -32,11 +32,11 @@ This tutorial shows how to define transects and extract the relevant variables f
 The repository includes one jupyter notebook (mixing_calc.ipynb) and two python scripts with functions to facilitate working with FVCOM output (aux_func_nopyfvcom.py) and for filtering the tides from the model output (tidal_filter.py). A short model output file is accessed through thredds to perform the calculations step by step. Pre-calculated quantities on a longer timeseries is included here (cross_sect_defn.npy).
 
 ## Install software
-Clone the repository in your local system and navigate to PML folder
+Clone the repository in your local system and navigate to T8.4_Estuarine_analysis_FVCOM_PML folder
 
 ```
 git clone https://github.com/immerse-project/Downstream-Users-Toolbox.git
-cd Downstream-Users-Toolbox/PML
+cd Downstream-Users-Toolbox/T8.4_Estuarine_analysis_FVCOM_PML/
 ```
 
 ## Execute the tutorial
