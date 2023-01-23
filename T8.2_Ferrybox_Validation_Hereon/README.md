@@ -38,7 +38,7 @@ Clone the repository in your local system and navigate to ferrybox_validation fo
 
 ```
 git clone https://github.com/immerse-project/Downstream-Users-Toolbox.git
-cd Downstream-Users-Toolbox/ferrybox_validation
+cd Downstream-Users-Toolbox/T8.2_Ferrybox_Validation_Hereon
 ```
 
 ## Execute the tutorial
