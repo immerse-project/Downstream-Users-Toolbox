@@ -34,7 +34,7 @@ including installing an appropriate python environment and accessing the data. D
 
 The case study notebooks can run easily on local computer resources (e.g. windows, linux or mac desktops/laptops), with an suitable python environment installed, e.g. via anaconda (www.anaconda.com) They can also run on cload based systems, such as the WEkEO Data and Information Access Services (DIAS; https://www.wekeo.eu/) system. Case study Notebooks T8.2, 4, and 5 run on the Machine Learning python environment provided with WEkEO. The T8.3 Notebook includes an application of oceanparcels Lagrangian model. The reqired data volume for the accomanying NEMO model data and the required python environment together exceed the storage capacity available for free WEkEO DIAS access.
 
-The Notebooks each provde instructions for running, but to run all Notebooks
+The Notebooks each provide detailed instructions for running, but to run all Notebooks
 ```
 git clone git@github.com:immerse-project/Downstream-Users-Toolbox.git
 
@@ -43,6 +43,12 @@ cd Downstream-Users-Toolbox/
 Install a common conda environment
 ```
 conda create -n immerse_env -c conda-forge --file conda_install.txt
+```
+Make this enviornment visible as kernel for jupyter notebooks
+```
+conda activate immerse_env
+python -m ipykernel install --user --name immerse_env 
+
 ```
 
 
