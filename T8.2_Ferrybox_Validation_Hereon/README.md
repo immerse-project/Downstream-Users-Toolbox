@@ -41,6 +41,13 @@ git clone https://github.com/immerse-project/Downstream-Users-Toolbox.git
 cd Downstream-Users-Toolbox/T8.2_Ferrybox_Validation_Hereon
 ```
 
+##Get the Data
+
+```
+cd Downstream-Users-Toolbox/T8.2_Ferrybox_Validation_Hereon
+wget https://zenodo.org/record/7521488/files/data.zip
+unzip data.zip
+```
 ## Execute the tutorial
 
 ```
