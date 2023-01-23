@@ -32,8 +32,18 @@ T8.5 Pollution transport by Submesoscales in the open ocean (University of Bolog
 Each case study notebook is accomanined by a readme file, providing a complete description of how to setup and run the Notebook,
 including installing an appropriate python environment and accessing the data. Data for T8.2, T8.3 and T8.5 are available on zenodo.org, while data for T8.4 in provided by an on-line THREDDS server. 
 
-The case study notebooks can run easily on local computer resources (e.g. windows, linux or mac desktops/laptops), with an suitable python environment installed, e.g. via anaconda (www.anaconda.com) They can also run on cload based systems, such as the WEkEO Data and Information Access Services (DIAS; https://www.wekeo.eu/) system. Case study Notebooks T8.2, 4, and 5 run on the Machine Learning python environment provided with WEkEO. The T8.3 Notebook includes an application of oceanparcels Lagrangian model. The reqired data volume for the accomanying NEMO model data and the required python environment together exceed the storage capacity available for free WEkEO DIAS access. 
+The case study notebooks can run easily on local computer resources (e.g. windows, linux or mac desktops/laptops), with an suitable python environment installed, e.g. via anaconda (www.anaconda.com) They can also run on cload based systems, such as the WEkEO Data and Information Access Services (DIAS; https://www.wekeo.eu/) system. Case study Notebooks T8.2, 4, and 5 run on the Machine Learning python environment provided with WEkEO. The T8.3 Notebook includes an application of oceanparcels Lagrangian model. The reqired data volume for the accomanying NEMO model data and the required python environment together exceed the storage capacity available for free WEkEO DIAS access.
 
+The Notebooks each provde instructions for running, but to run all Notebooks
+```
+git clone git@github.com:immerse-project/Downstream-Users-Toolbox.git
+
+cd Downstream-Users-Toolbox/
+```
+Install a common conda environment
+```
+conda create -n immerse_env -c conda-forge --file conda_install.txt
+```
 
 
 
