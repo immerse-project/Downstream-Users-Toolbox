@@ -1,0 +1,17 @@
+parcels=2.2.2
+Cartopy
+ffmpeg
+jupyter
+xhistogram
+ipykernel
+numpy
+Xarray
+matplotlib
+netcdf4
+dask
+motuclient
+cartopy
+notebook
+nb_conda_kernels
+scipy
+pyproj
