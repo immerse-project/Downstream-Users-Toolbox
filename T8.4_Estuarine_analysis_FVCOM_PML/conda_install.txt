@@ -1,8 +1,0 @@
-notebook
-nb_conda_kernels
-numpy
-netcdf4
-matplotlib
-scipy
-pyproj
-
