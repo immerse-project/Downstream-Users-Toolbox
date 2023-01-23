@@ -1,3 +1,10 @@
+<div class="row">
+  <div class="column">
+   <img src="https://immerse-ocean.eu/img/headers/immerse-header-logo.png"
+     alt="Immerse logo"
+     style="width:30%" />
+  </div>
+  
 # Assessing impact of NEMO wave coupling on surface particle dispersal simulations
 
 ## Introduction
