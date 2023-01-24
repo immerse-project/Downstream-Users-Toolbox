@@ -18,7 +18,7 @@
   
 ## Introduction
 The goal of this tutorial is to validate surface temperature and salinity outputs from different models using lagrangian data from a FerryBox, travelling from the outer estuaty towards the open ocean. Within the IMMERSE project, the approach has been used to evaluate the capabability of a newly developed high resolution (400m) NEMO configuration for the Southern North Sea to replicate the outer estaury dynamics,
-compared to the coarser CMEMS operational prdouct AMM15, and the locally higher resolving pre-operational SCHISM based setup from hereon.
+compared to the coarser CMEMS operational prdouct AMM15, and the locally higher resolving pre-operational SCHISM based setup from Hereon.
   
 ### Background
 Ocean models are valuable tools to predict future (forecast) or reconstruct past (hindcast) events, gain undestranding of physical processes, and test 'what if scenairos' in the context of adaptation and management strategies. Credibility regarding the reasonable functioning of such models is gained from the validation against observational data, indicating how good the model can replicate the observed ocean state.
@@ -29,7 +29,7 @@ In the context of IMMERSE at Hereon a NEMO configuration for Southern North Sea 
 This setup was tested and validated in comparison to other models, and later on coupled with the WAM wave model.
   
 ### Purpose of tutorial
-This tutorial shows how to plot maps of different variables from the different models with a overlay of the measurement data, perform interpolations to colocate the model outputs with the FerryBox in time an space, and compute and plot soem basic error statistics.
+This tutorial shows how to plot maps of different variables from the different models with an overlay of the measurement data, perform interpolations to colocate the model outputs with the FerryBox in time an space, and compute and plot some basic error statistics.
 
 The repository includes one jupyter notebook (ferrybox_validation.ipynb) and a python script within in a subfolder lib, containing functions to facilitate working with the unstructured grid SCHISM output (schism.py)).
 
