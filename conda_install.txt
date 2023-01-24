@@ -15,3 +15,4 @@ notebook
 nb_conda_kernels
 scipy
 pyproj
+python-wget
