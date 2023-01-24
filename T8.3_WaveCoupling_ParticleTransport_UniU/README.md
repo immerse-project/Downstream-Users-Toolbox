@@ -29,21 +29,17 @@ It consists of two jupyter notebooks:
 conda activate root
 conda create -n py3_parcels-waves -c conda-forge parcels cartopy ffmpeg jupyter xhistogram
 ```
-3. Create working directory
-``` 
-mkdir toolbox_wave-impact-particletransport
-cd toolbox_wave-impact-particletransport
+## Install software
+Clone the repository in your local system and navigate to Wave Coupling and Particle trackign folder:
+
 ```
-4. Get jupyter notebooks
-```
-mkdir code
-cd code
-### -> download the two jupyter notebooks found in found in ./code ###
+git clone https://github.com/immerse-project/Downstream-Users-Toolbox.git
+cd Downstream-Users-Toolbox/T8.3_WaveCoupling_ParticleTransport_UniU
 ```
 
 ## Gather example data
 ```
-cd ..
+
 mkdir data
 cd data
 mkdir domain
@@ -66,7 +62,7 @@ mkdir ../figures
 ```
 Activate environment and start jupyter notebook
 ```
-cd ../code
+
 conda activate py3_parcels-waves
 export CC==gcc # necessary when Parcels is installed on MAC
 jupyter notebook
