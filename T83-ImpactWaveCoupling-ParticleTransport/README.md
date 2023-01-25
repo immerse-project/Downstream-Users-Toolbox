@@ -28,29 +28,16 @@ mkdir toolbox_wave-impact-particletransport
 cd toolbox_wave-impact-particletransport
 ```
 4. Get jupyter notebooks
--> download the two jupyter notebooks from this repository
+download the two jupyter notebooks from this GIT repository
 
 ## Gather example data
 ```
 mkdir data
 cd data
-mkdir domain
-mkdir surface_TKE_UNC 
-mkdir surface_TKE_CO
-cd domain
-### ->  download grid data ###
-cd ../surface_TKE_UNC
-### -> download surface velocity data from uncoupled simulation (surface_TKE_v42RC) ###
-cd ../surface_TKE_CO
-### -> download surface velocity data from coupled simulation (surface_TKE_CO_FORCE_MIX_LC015) ###
-cd .. #back to data folder
 ```
+download data from zenodo (and keep folder structure), doi:10.5281/zenodo.7561506
 
 ## Execute the tutorial
-Create folder for trajectory and figure output
-```
-mkdir LAtrajectories
-```
 Activate environment and start jupyter notebook
 ```
 cd .. #back to main folder
