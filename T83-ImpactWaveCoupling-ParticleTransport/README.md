@@ -28,15 +28,10 @@ mkdir toolbox_wave-impact-particletransport
 cd toolbox_wave-impact-particletransport
 ```
 4. Get jupyter notebooks
-```
-mkdir code
-cd code
-### -> download the two jupyter notebooks found in found in ./code ###
-```
+-> download the two jupyter notebooks from this repository
 
 ## Gather example data
 ```
-cd ..
 mkdir data
 cd data
 mkdir domain
@@ -55,11 +50,10 @@ cd .. #back to data folder
 Create folder for trajectory and figure output
 ```
 mkdir LAtrajectories
-mkdir ../figures
 ```
 Activate environment and start jupyter notebook
 ```
-cd ../code
+cd .. #back to main folder
 conda activate py3_parcels-waves
 export CC==gcc # necessary when Parcels is installed on MAC
 jupyter notebook
