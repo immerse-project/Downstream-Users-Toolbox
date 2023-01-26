@@ -29,7 +29,7 @@ It consists of two jupyter notebooks:
 conda activate root
 conda create -n py3_parcels-waves -c conda-forge parcels cartopy ffmpeg jupyter xhistogram
 ```
-Clone the repository in your local system and navigate to Wave Coupling and Particle trackign folder:
+3. Clone the repository in your local system and navigate to Wave Coupling and Particle trackign folder:
 
 ```
 git clone https://github.com/immerse-project/Downstream-Users-Toolbox.git
@@ -56,7 +56,7 @@ jupyter notebook
 ```
 Open and execute notebooks, first Parcels_CalcTraj.ipynb, then CompTraj_uncoupledVScoupled.ipynb
 
-##References
+## References
 Bosi, S., Broström, G., & Roquet, F. (2021). The Role of Stokes Drift in the Dispersal of North Atlantic Surface Marine Debris. Frontiers in Marine Science, 8, 1137
 
 Delandmeter, P., and E. van Sebille (2019), The Parcels v2.0 Lagrangian framework: new field interpolation schemes, Geosci. Model Dev., 12(8), 3571-3584, doi:10.5194/gmd-12-3571-2019.
