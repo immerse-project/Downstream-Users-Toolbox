@@ -37,9 +37,7 @@ cd Downstream-Users-Toolbox/T8.3_WaveCoupling_ParticleTransport_UniU
 ```
 
 ## Gather example data
-```
-mkdir data
-```
+
 download data from zenodo (and keep folder structure), doi:10.5281/zenodo.7561506
 
 ```
