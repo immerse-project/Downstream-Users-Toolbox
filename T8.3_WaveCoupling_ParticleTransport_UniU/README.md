@@ -29,7 +29,6 @@ It consists of two jupyter notebooks:
 conda activate root
 conda create -n py3_parcels-waves -c conda-forge parcels cartopy ffmpeg jupyter xhistogram
 ```
-## Install software
 Clone the repository in your local system and navigate to Wave Coupling and Particle trackign folder:
 
 ```
@@ -39,30 +38,18 @@ cd Downstream-Users-Toolbox/T8.3_WaveCoupling_ParticleTransport_UniU
 
 ## Gather example data
 ```
-
 mkdir data
 cd data
-mkdir domain
-mkdir surface_TKE_UNC 
-mkdir surface_TKE_CO
-cd domain
-### ->  download grid data ###
-cd ../surface_TKE_UNC
-### -> download surface velocity data from uncoupled simulation (surface_TKE_v42RC) ###
-cd ../surface_TKE_CO
-### -> download surface velocity data from coupled simulation (surface_TKE_CO_FORCE_MIX_LC015) ###
-cd .. #back to data folder
+```
+download data from zenodo (and keep folder structure), doi:10.5281/zenodo.7561506
+
+```
+cd ..
 ```
 
 ## Execute the tutorial
-Create folder for trajectory and figure output
-```
-mkdir LAtrajectories
-mkdir ../figures
-```
 Activate environment and start jupyter notebook
 ```
-
 conda activate py3_parcels-waves
 export CC==gcc # necessary when Parcels is installed on MAC
 jupyter notebook
