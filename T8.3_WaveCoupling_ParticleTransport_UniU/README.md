@@ -39,13 +39,15 @@ cd Downstream-Users-Toolbox/T8.3_WaveCoupling_ParticleTransport_UniU
 ## Gather example data
 ```
 mkdir data
-cd data
 ```
 download data from zenodo (and keep folder structure), doi:10.5281/zenodo.7561506
 
 ```
-cd ..
+wget https://zenodo.org/record/7561506/files/data.zip
+unzip data.zip
+
 ```
+Note: This dataset exceeds the storage size freely available on the WEKEO DIAS.
 
 ## Execute the tutorial
 Activate environment and start jupyter notebook
@@ -55,6 +57,22 @@ export CC==gcc # necessary when Parcels is installed on MAC
 jupyter notebook
 ```
 Open and execute notebooks, first Parcels_CalcTraj.ipynb, then CompTraj_uncoupledVScoupled.ipynb
+
+The  Parcels_CalcTraj.ipynb notebook can be set to run a single time step for testing, with release_name = "Test".
+
+The full experiment can be run by setting release_name = "GulfOfLion".
+
+Three difference experiments are available selected by setting key_input to 'uncoupled', 'uncoupled_sd', or 'coupled_sd'
+
+These can take several hours to run, so it maybe appropriate to run as a python script (eg in a batch system), rather than a juypter notebook.
+
+To convert this notebook to a python script comment out the two lines: %%time and the line %matplotlib inline, then execute:
+
+```
+cd Downstream-Users-Toolbox/T8.3_WaveCoupling_ParticleTransport_UniU
+conda activate py3_parcels-waves
+jupyter nbconvert --to script  Parcels_CalcTraj.ipynb
+```
 
 ## References
 Bosi, S., Broström, G., & Roquet, F. (2021). The Role of Stokes Drift in the Dispersal of North Atlantic Surface Marine Debris. Frontiers in Marine Science, 8, 1137
