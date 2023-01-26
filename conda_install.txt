@@ -1,4 +1,4 @@
-parcels=2.2.2
+parcels
 Cartopy
 ffmpeg
 jupyter
