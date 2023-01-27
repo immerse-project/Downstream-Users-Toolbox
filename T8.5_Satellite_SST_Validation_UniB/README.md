@@ -34,7 +34,7 @@ We also consider the impacts of upgrading the NEMO code base to that developed i
 
 ## Purpose of tutorial
 <div style="text-align: justify">
-The objective of this exercise is to use satellite Sea Surface Temperature (SST) data (<a href="https://data.marine.copernicus.eu/product/SST_MED_SST_L4_NRT_OBSERVATIONS_010_004">SST_MED_SST_L4_NRT_OBSERVATIONS_010_004</a> product) to perform the validation of the high-resolution nested model implemented in the Galicia coastal area (NW of Spain). The simulation started on 7 November 2002 at 00:00 and ran until 17 November 2002 at 24:00. This tutorial consists of one jupyter notebooks (to be found in ./UniB/satsst_validation/satsst_valid.ipynb) which will:
+The objective of this exercise is to use satellite Sea Surface Temperature (SST) data (<a href="https://data.marine.copernicus.eu/product/SST_MED_SST_L4_NRT_OBSERVATIONS_010_004">SST_MED_SST_L4_NRT_OBSERVATIONS_010_004</a> product) to perform the validation of the high-resolution nested model implemented in the Galicia coastal area (NW of Spain). The simulation started on 7 November 2002 at 00:00 and ran until 17 November 2002 at 24:00. This tutorial consists of one jupyter notebooks (to be found in Downstream-Users-Toolbox/T8.5_Satellite_SST_Validation_UniB/satsst_valid.ipynb) which will:
 <ul>
   <li>download and extract SST data from zenodo repository</li>
   <li>read model and satellite SST data</li>
@@ -74,7 +74,7 @@ Miniconda Distribution includes conda as package manager, Python, the packages t
 </code>
    If some packages are missing you can install them into the current environment using the "conda install" command type the following:
 <code>
-  conda install PACKAGES-LIST
+  conda install numpy xarray matplotlib cartopy python-wget scipy
 </code>
    </div>
   </li>
@@ -82,7 +82,7 @@ Miniconda Distribution includes conda as package manager, Python, the packages t
    Clone the repository in your local system and navigate to UniB folder
 <code>
   git clone https://github.com/immerse-project/Downstream-Users-Toolbox.git
-  cd Downstream-Users-Toolbox/UniB/satsst_validation
+  cd Downstream-Users-Toolbox/T8.5_Satellite_SST_Validation_UniB/
 </code>
     </li>
   <li>
